@@ -13,7 +13,7 @@
 <li>Students will distinguish between HTTP and HTTPS.</li><br>
 <li>Students will understand the role of Certificate Authorities in the SSL/TLS handshake process.</li><br>
 <li>Students will recognize the padlock symbol in the browser as an indication of a secure connection.</li><br>
-<li>Students will identify the main differences between SSL and TLS.</li><br>
+<li>Students will identify the main differences between SSL and TLS.</li>
  </ul>
 
 
