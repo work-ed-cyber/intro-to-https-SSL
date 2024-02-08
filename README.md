@@ -50,7 +50,25 @@
 **Digital Certificate**</li>
 </ul>
 
+<h2>NICE Framework KSAs</h2>
+<ul>
+<li>K0427 - Knowledge of encryption algorithms and cyber capabilities/tools (e.g., SSL, PGP).</li>
+<br>
+<li>S0138 - Skill in using Public-Key Infrastructure (PKI) encryption and digital signature capabilities into applications (e.g., S/MIME email, SSL traffic).</li>
+<br>
+<li>K0018 - Knowledge of encryption algorithms.</li>
+<br>
+<li>K0624 - Knowledge of Application Security Risks (e.g. Open Web Application Security Project Top 10 list)</li>
+<br>
+<li>K0135 - Knowledge of web filtering technologies.</li>
+<br>
+<li>K0398 - Knowledge of concepts related to websites (e.g., web servers/pages, hosting, DNS, registration, web languages such as HTML).</li>
+<br>
+<li>K0444 - Knowledge of how Internet applications work (SMTP email, web-based email, chat clients, VOIP).</li>
+<br>
+<li>K0447 - Knowledge of how to collect, view, and identify essential information on targets of interest from metadata (e.g., email, http).</li> 
 
+</ul>
 
 
 <h2>Lesson Prerequisites</h2>
