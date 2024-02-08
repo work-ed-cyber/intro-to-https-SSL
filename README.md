@@ -1,61 +1,56 @@
-<h1> Lesson 3.2: Linux Navigation </h1>
+<h1> Lesson 5.2: Introduction to HTTPS and SSL/TLS </h1>
 <h2> Summary</h2>
 
-<p1>In this lesson, students will learn how to navigate through a linux machine, understand what a distribution of linux is, and be able to update their linux machines.</p1>
+<p1>Secure Socket Layer (SSL) and its successor, Transport Layer Security (TLS), are cryptographic protocols designed to communicate securely over computer networks. HTTPS, or Hypertext Transfer Protocol Secure, uses SSL/TLS to ensure a secure connection between a user's web browser and the web server. This lesson will introduce students to the concepts of HTTPS and the underlying technologies of SSL and TLS.</p1>
 <br>
+
+
+
 
 <h2>Learning Objectives</h2>
 <ul>
-<li>Students will acquire the essential skills to proficiently navigate through a Linux machine using the command line, understanding the hierarchical structure of directories and files.</li>
-  <br>
-<li>Students will explore the variety of Linux distributions, understanding their unique features, tools, and the underlying similarities and differences among them.</li><br>
+<li>Students will recognize the importance of secure communication on the Internet.</li><br>
+<li>Students will distinguish between HTTP and HTTPS.</li><br>
+<li>Students will understand the role of Certificate Authorities in the SSL/TLS handshake process.</li><br>
+<li>Students will recognize the padlock symbol in the browser as an indication of a secure connection.</li><br>
+<li>Students will identify the main differences between SSL and TLS.</li><br>
+ </ul>
 
-<li>Students will learn how to effectively update their Linux machines to ensure optimized performance, enhanced security, and access to the latest features and improvements.</li><br>
-  
-<li>Objective Summary and Learning Outcome</li>
 
-</ul>
+
 
 <h2>Vocabulary and Acronyms</h2>
 
 <ul>
 <li>
 
-  **Package Manager**</li>
-  
-<li>
+  **HTTP**</li>
+  <li>
 
-**Update & Upgrade**</li>
-  
-<li>
-  
-**Repository**</li>
-
-<li>
-
-**Root Directory**</li>
+**HTTPS**</li>
   
 <li>
   
-**Path**</li>
+**Encryption**</li>
 
 <li>
   
-**Relative Path**</li>
+**SSL**</li>
 
 <li>
   
-**Linux Distribution**</li>
+**Certificate Authority**</li>
 
 <li>
   
-**File System**</li>
+**TLS**</li>
 
 <li>
   
-**Directory**</li>
-
+**Digital Certificate**</li>
 </ul>
+
+
 
 
 <h2>Lesson Prerequisites</h2>
@@ -64,95 +59,74 @@
 
 
 <h2>Introduction</h2>
-Lesson 3.2 propels students into the core of the Linux operating system, enhancing their prowess in navigating the Linux file system, understanding the variety in Linux distributions, and mastering the essential practice of system updates. As we traverse the command line, explore distributions, and delve into update mechanisms, we are set to unfold a rich tapestry of knowledge that's fundamental to mastering Linux.
+Today, we delve into the fascinating realm of secure Internet communications, discussing the fundamental concepts of SSL, TLS, and HTTPS.
 
-<h2>Commanding the Command Line</h2>
-The command line interface (CLI) is the powerhouse for Linux navigation. Here, we delve into a plethora of commands essential for proficient navigation:
+<h2>Definitions and Basics</h2>
 
 <ul>
-	<li><h4><ins>cd (Change Directory)</ins></h4></li>
-	<ul>
-		<li>Transition between directories.</li>
-	</ul>
-	<li><h4><ins>ls (list)</ins></h4></li>
-	<ul>
-		<li>Enumerate files and directories, with options like -l for long listing and -a to display hidden files.</li>
-	</ul>
-	<li><h4><ins>pwd (Print Working Directory)</ins></h4></li>
-	<ul>
-		<li>Display the current directory path.</li>
-	</ul>
-	<li><h4><ins>mkdir (Make Directory) & rmdir (Remove Directory)</ins></h4></li>
-	<ul>
-		<li>Create and remove directories.</li>
-	</ul>
-	<li><h4><ins>touch</ins></h4></li>
-	<ul>
-		<li>Create new, empty files.</li>
-	</ul>
-	<li><h4><ins>rm (Remove)</ins></h4></li>
-	<ul>
-		<li>Delete files and directories, with -r option for recursive removal.</li>
-	</ul>
-	<li><h4><ins>find</ins></h4></li>
-	<ul>
-		<li>Search for files and directories.</li>
-	</ul>
-	<li><h4><ins>grep</ins></h4></li>
-	<ul>
-		<li>Search text using patterns.</li>
-	</ul>
-	<li><h4><ins>cat, head, tail</ins></h4></li>
-	<ul>
-		<li>Display file content.</li>
-	</ul>
-	<li><h4><ins>nano, vim</ins></h4></li>
-	<ul>
-		<li>Text editors for modifying file content.</li>
-	</ul>
-</ul>
-<br>
-Understanding the structure and permissions in the Linux file system, and the significance of the root directory, is crucial for effective system navigation and management.
+	<li><h4><ins>SSL (Secure Socket Layer)</ins></h4></li>
+ <ul>
+	 <li>One of the original cryptographic protocols to secure internet communications. While it has mainly been superseded, its name still frequently appears in the context of security, primarily due to historical familiarity.</li>
+ </ul>
 
+ <li><h4><ins>TLS (Transport Layer Security)</ins></h4></li>
+  <ul>
+	 <li>An evolution of SSL, TLS offers a more secure and updated version, keeping up with the growing challenges of internet security. While SSL and TLS are sometimes used interchangeably, it's crucial to understand that TLS is the modern, recommended version.
+</li>
+ </ul>
 
-	
-<h2>Diverse Destinations: Linux Distributions:</h2>
-Linux distributions, often referred to as distros, are various flavors of Linux each packaged with unique sets of software applications, utilities, and an installation system. They cater to different user needs and operational environments:
-<ul>
-	<li><h4><ins>Ubuntu</ins></h4></li>
-	<ul><li>Renowned for its user-friendliness and robust community support, ideal for newcomers to Linux, and extensively used in server environments.</li></ul>
-	<li><h4><ins>Fedora</ins></h4></li>
-	<ul><li>Known for its cutting-edge software, it's a solid choice for developers and system administrators.</li></ul>
-	<li><h4><ins>Debian</ins></h4></li>
-	<ul><li>Praised for its stability and a vast repository of software packages, it's a favorite among server environments and seasoned Linux users.</li></ul>
-	<li><h4><ins>CentOS</ins></h4></li>
-	<ul><li>A free, community-supported computing platform, binary compatible with its upstream source, Red Hat Enterprise Linux, and tailored for enterprise environments.</li></ul>
-	<li><h4><ins>Arch Linux</ins></h4></li>
-        <ul><li>Known for its simplicity and customization, preferred by users who wish to build their system from the ground up.</li></ul>
-	
-</ul>
-<br>
-Exploring the unique package management systems like apt for Debian-based and dnf for Fedora-based distributions, which streamline the process of installing, updating, and removing software.
-
-<h2>The Path of Updates</h2>
-Updates are pivotal for maintaining system security, stability, and accessing new features. Learn the essentials of:<br>
-<ul>
-	<br>
-	<li>Checking for updates using package managers.</li><br>
-	<li>Understanding the difference between system updates, upgrades, and distribution upgrades.</li><br>
-	<li>Applying updates and upgrades using commands like sudo apt update and sudo apt upgrade for Debian-based distributions, or sudo dnf check-update and sudo dnf upgrade for Fedora-based distributions.</li><br>
-	<li>Automating updates for enhanced security and reduced administrative overhead.</li>
+ <li><h4><ins>HTTPS (Hypertext Transfer Protocol Secure)</ins></h4></li>
+  <ul>
+	 <li>When browsing the web, you may notice that some website URLs begin with "HTTPS" instead of just "HTTP." This indicates that the website uses SSL/TLS encryption to ensure a secure connection, protecting data transmissions between the user's browser and the web server.
+</li>
+ </ul>
 </ul>
 
 
+<h2>Why is this important?</h2>
+
+We live in a digital age where the importance of data security cannot be overstated. These protocols ensure the confidentiality and integrity of our data as it traverses the vast web. It keeps our personal information, financial transactions, and other sensitive data safe from prying eyes.
+SSL, TLS, and Authentication:
+
+A critical aspect of these protocols is the authentication process. It's about encrypting data and ensuring you send it to the right recipient. This is where digital certificates and Certificate Authorities come in. When a website presents its certificate, your browser checks its authenticity with a Certificate Authority, ensuring you communicate with the intended website and not a malicious impersonator.
 
 
+<h2>Applications in the Real World:</h2>
+Online Banking: When you access your bank account online, TLS ensures that your transaction details, account balance, and other sensitive data remain private and secure.
+<ul><br>
+	<li><ins>E-commerce</ins></li>
+	<ul>
+		<li>Websites like Amazon or eBay use HTTPS to protect your credit card details and other personal information when purchasing.
+		</li><br>
+	</ul>
+	<li><ins>Emails</ins></li>
+	<ul>
+		<li>Email services employ SSL/TLS to secure your email content, ensuring the privacy of your communications.
+		</li>
+	</ul><br>
+	<li><ins>Social Media</ins></li>
+	<ul>
+		<li>Platforms like Facebook or Twitter use these protocols to protect user data, chat messages, and even your likes and shares from potential hackers.
+		</li>
+	</ul>
+</ul>
+
+<h2>SSL, TLS, and the Trust Factor</h2>
+
+The authentication process is vital. If you've ever noticed a green padlock or the word 'Secure' in your browser's address bar, that's a visual cue indicating an authenticated and encrypted connection. Companies invest in these certificates not just for actual security but also to enhance user trust.
+
+<ins>Cryptography's Central Role:<ins>
+
+A blend of public and private cryptographic keys facilitates secure communication. Data encrypted with one key can only be decrypted by its counterpart, ensuring confidentiality and integrity.
+
+
+<h2>Conclusion</h2>
+
+As you navigate the internet, be it for shopping, banking, or even reading articles, the silent work of SSL, TLS, and HTTPS keeps your data safe. While we often take it for granted, understanding its significance helps us appreciate the vast structures ensuring our digital security. The next time you browse, shop, or bank online, remember the intricate dance of cryptography and authentication behind the scenes, ensuring a seamless and secure experience. Recognizing their real-world applications makes us appreciate the extensive efforts invested in maintaining digital privacy and security.
 
 <h2> Presentation</h2>
 
-<a href="https://docs.google.com/presentation/d/1pPwjFQ1pF2o5WkIRKpSvxjoyCu4TNmtp/edit?usp=sharing&ouid=110228847857413878764&rtpof=true&sd=true"> Kali Linux </a><br>
-<br>
-<a href="https://docs.google.com/presentation/d/1-vqchhnrlFpbk7WndvFJIecG1hf1dmKM/edit?usp=sharing&ouid=110228847857413878764&rtpof=true&sd=true">Introduction to Linux </a>
+
 
 
 <h2> Hands-On Labs</h2>
@@ -160,4 +134,6 @@ Updates are pivotal for maintaining system security, stability, and accessing ne
 
 <h2> Additional Resources</h2>
 
-<a href="https://drive.google.com/file/d/1Y_4AIFb7cOzNqxM6m60G-zdx_cu2zeER/view?usp=drive_link"> Linux Cheat Sheet</a>  <br>
+<a href="https://youtu.be/2hLiQhER1bk">  HTTP, HTTPS, SSL, And TLS Explained </a> - Since many professionals need to learn network-related terminologies to read a security report, we'll explain what HTTP, HTTPS, SSL, and TLS are, their differences, and how they work together.  <br>
+
+<a href= "https://youtu.be/AB0VMbvEz7g"> HTTP vs. HTTPS: How SSL/TLS Encryption Works </a> - In this video, you’ll learn about HTTP vs. HTTPs. 
