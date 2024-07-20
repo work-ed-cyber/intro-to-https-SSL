@@ -52,21 +52,21 @@
 
 <h2>NICE Framework KSAs</h2>
 <ul>
-<li>K0427 - Knowledge of encryption algorithms and cyber capabilities/tools (e.g., SSL, PGP).</li>
+<li>K0427: Knowledge of encryption algorithms and cyber capabilities/tools (e.g., SSL, PGP).</li>
 <br>
-<li>S0138 - Skill in using Public-Key Infrastructure (PKI) encryption and digital signature capabilities into applications (e.g., S/MIME email, SSL traffic).</li>
+<li>S0138: Skill in using Public-Key Infrastructure (PKI) encryption and digital signature capabilities into applications (e.g., S/MIME email, SSL traffic).</li>
 <br>
-<li>K0018 - Knowledge of encryption algorithms.</li>
+<li>K0018: Knowledge of encryption algorithms.</li>
 <br>
-<li>K0624 - Knowledge of Application Security Risks (e.g. Open Web Application Security Project Top 10 list)</li>
+<li>K0624: Knowledge of Application Security Risks (e.g. Open Web Application Security Project Top 10 list)</li>
 <br>
-<li>K0135 - Knowledge of web filtering technologies.</li>
+<li>K0135: Knowledge of web filtering technologies.</li>
 <br>
-<li>K0398 - Knowledge of concepts related to websites (e.g., web servers/pages, hosting, DNS, registration, web languages such as HTML).</li>
+<li>K0398: Knowledge of concepts related to websites (e.g., web servers/pages, hosting, DNS, registration, web languages such as HTML).</li>
 <br>
-<li>K0444 - Knowledge of how Internet applications work (SMTP email, web-based email, chat clients, VOIP).</li>
+<li>K0444: Knowledge of how Internet applications work (SMTP email, web-based email, chat clients, VOIP).</li>
 <br>
-<li>K0447 - Knowledge of how to collect, view, and identify essential information on targets of interest from metadata (e.g., email, http).</li> 
+<li>K0447: Knowledge of how to collect, view, and identify essential information on targets of interest from metadata (e.g., email, http).</li> 
 
 </ul>
 
@@ -142,6 +142,29 @@ A blend of public and private cryptographic keys facilitates secure communicatio
 
 As you navigate the internet, be it for shopping, banking, or even reading articles, the silent work of SSL, TLS, and HTTPS keeps your data safe. While we often take it for granted, understanding its significance helps us appreciate the vast structures ensuring our digital security. The next time you browse, shop, or bank online, remember the intricate dance of cryptography and authentication behind the scenes, ensuring a seamless and secure experience. Recognizing their real-world applications makes us appreciate the extensive efforts invested in maintaining digital privacy and security.
 
+<h2>Definitions</h2>
+<ul>
+<li><b>HTTP (Hypertext Transfer Protocol):</b> The foundational protocol used for transmitting data over the web, allowing browsers and servers to communicate and exchange information.<br>
+<br>
+
+<li><b>HTTPS (Hypertext Transfer Protocol Secure):</b> An extension of HTTP that uses encryption to secure data transmitted between a browser and a web server, protecting it from interception and tampering.<br>
+<br>
+
+<li><b>Encryption:</b> The process of converting data into a secure format that is unreadable without the appropriate decryption key, ensuring data confidentiality and integrity.<br>
+<br>
+
+<li><b>SSL (Secure Sockets Layer):</b> A now-deprecated cryptographic protocol used to establish secure communication channels over the internet, succeeded by TLS.<br>
+<br>
+
+<li><b>Certificate Authority (CA):</b> An entity that issues digital certificates to validate the identity of organizations or individuals and facilitate secure communications through encryption.<br>
+<br>
+
+<li><b>TLS (Transport Layer Security):</b> A cryptographic protocol that replaces SSL, providing secure encryption for data transmitted over the internet to ensure privacy and data integrity.<br>
+<br>
+
+<li><b>Digital Certificate:</b> An electronic document issued by a Certificate Authority that uses cryptographic techniques to verify the identity of the certificate holder and facilitate secure communication.
+</ul>
+
 <h2> Presentation</h2>
 
 
@@ -149,7 +172,7 @@ As you navigate the internet, be it for shopping, banking, or even reading artic
 
 <h2> Hands-On Labs</h2>
 
-
+<h2>Games</h2>
 <h2> Additional Resources</h2>
 
 <a href="https://youtu.be/2hLiQhER1bk">  HTTP, HTTPS, SSL, And TLS Explained </a> - Since many professionals need to learn network-related terminologies to read a security report, we'll explain what HTTP, HTTPS, SSL, and TLS are, their differences, and how they work together.  <br>
