@@ -171,6 +171,8 @@ As you navigate the internet, be it for shopping, banking, or even reading artic
 
 
 <h2> Hands-On Labs</h2>
+<a href="https://github.com/work-ed-cyber/5.2-easy/tree/main">Introduction to HTTPS and SSL/TLS </a> - Easy <br>
+<br>
 <a href="https://github.com/work-ed-cyber/5.2---medium"> Research-Based Activity: Exploring the Role of Certificate Authorities in SSL/TLS and HTTPS </a> - Medium
 
 <h2>Games</h2>
